@@ -1,0 +1,1 @@
+The Firebase Realtime Database sometimes throws an error that is not immediately obvious:  `Error: Database.ServerValue.TIMESTAMP is not a function`. This occurs when you try to use `ServerValue.TIMESTAMP` in a way that Firebase doesn't expect. For instance, directly assigning it as a value in a `set()` call, rather than using it within an object.
